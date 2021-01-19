@@ -1,9 +1,8 @@
 import React,{Component} from 'react'
 
 
-class App extends Component{
-  render(){
-    return (
+/* render(){
+  return (
     <div>
       <label htmlFor="bar">bar</label>
       <input type="text" onChange={() => {console.log("change")}}></input>
@@ -11,8 +10,22 @@ class App extends Component{
     </div>
     )
   }
+  class App extends Component{
+}
+ */
+
+const App = () =>{
+  return(
+    <div>
+      <Cat />
+      <Cat />
+    </div>
+  )
 }
 
+const Cat = () =>{
+  return <div>Meo!</div>
+}
 
 
 export default App;
